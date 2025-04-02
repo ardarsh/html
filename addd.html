@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Image in HTML</title>
+    <style>
+        /* Basic styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Container for centering the content */
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Make the image responsive */
+        img {
+            width: 100%;         /* Makes the image take up 100% of the container's width */
+            height: auto;        /* Maintains the aspect ratio of the image */
+            max-width: 100%;     /* Prevents the image from exceeding its original width */
+            display: block;      /* Removes any extra space below the image */
+            margin: 0 auto;      /* Centers the image horizontally */
+        }
+
+        h1, p {
+            text-align: center;
+        }
+
+        /* Media Query for devices with width between 600px and 1024px (Tablets and Small Laptops) */
+        @media (min-width: 600px) and (max-width: 1024px) {
+            img {
+                width: 80%;   /* Resize image to fit well on medium devices */
+            }
+        }
+
+        /* Media Query for devices with width smaller than 600px (Mobile Phones) */
+        @media (max-width: 600px) {
+            img {
+                width: 90%;   /* Resize image to fit well on smaller screens */
+            }
+        }
+
+        /* Media Query for larger screens (Desktops and Large Laptops) */
+        @media (min-width: 1024px) {
+            img {
+                width: 100%;   /* Keep the image at full size for larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to My Web Page</h1>
+        
+        <p>Here is an image of a beautiful sunset:</p>
+
+        <!-- Image tag -->
+        <img src="jj.jpg" alt="A beautiful sunset over the ocean" />
+    </div>
+
+</body>
+</html>
